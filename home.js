@@ -1,3 +1,5 @@
+var slideIndex = 1;
+
 function getTimeRemaining(endtime) {
   var t = Date.parse(endtime) - Date.parse(new Date());
   var seconds = Math.floor((t / 1000) % 60);
@@ -37,25 +39,30 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-function onload() {
-  initializeClock('clockdiv', 'Jul 11, 2020 09:00:00');
+function plusSlides(n) {
+  showDivs(slideIndex += n);
 }
 
-//Number Increment Animation 
-document.addEventListener("DOMContentLoaded", () => {
-  function counter(id, start, end, duration) {
-   let obj = document.getElementById(id),
-    current = start,
-    range = end - start,
-    increment = end > start ? 31 : -1,
-    step = Math.abs(Math.floor(duration / range)),
-    timer = setInterval(() => {
-     current += end > current ? increment : -1;
-     obj.textContent = current;
-     if (current === end) {
-      clearInterval(timer);
-     }
-    }, step);
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  console.log(x.length);
+  if (n > x.length) {
+    slideIndex = 1;
   }
-  counter("count3", 0, 35000, 50);
- });
+  if (n < 1) {
+    slideIndex = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+    x[i].style.opacity = 0;
+  }
+  x[slideIndex - 1].style.display = "inline-block";
+  x[slideIndex - 1].style.opacity = 1;
+}
+
+function onload() {
+  initializeClock('clockdiv', 'Jul 11, 2020 09:00:00');
+  showDivs(slideIndex);
+  var timer1 = setInterval(() => plusSlides(1), 15000);
+}

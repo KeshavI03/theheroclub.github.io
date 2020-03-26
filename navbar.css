@@ -1,19 +1,25 @@
-@media (min-width: 1200px) {
-    .navbar {
-        position: sticky;
-        top: 0;
-        font-size: 1.3em;
-        height: 70px;
-        background-color: white;
-        z-index: 5;
-    }
+.navbar {
+    position: sticky;
+    top: 0;
+    font-size: 1.3em;
+    height: 70px;
+    background-color: white;
+    color: #F95700;
+    z-index: 50;
+}
 
-    .navlinks {
+.logo-img {
+    height: 50px;
+    padding: 10px;
+    box-sizing: content-box;
+}
+
+@media (min-width: 1200px) {
+    .collapsible {
         float: right;
         padding-right: 40px;
     }
-
-    .navlinks a {
+    .navbar a {
         position: relative;
         display: inline-block;
         text-decoration: none;
@@ -22,34 +28,27 @@
         margin: 0;
         height: 70px;
         line-height: 70px;
-        
         transition: all .25s ease-in-out;
     }
-
-    .navlinks a i {
+    .navbar a i {
         padding-right: 5px;
     }
-
-    .navlinks a:hover {
+    .navbar a:hover {
         background-color: #ECECEC;
+        color: #0c86c7;
     }
-
-    .navlinks a:active {
+    .navbar a:active {
         background-color: #F95700;
         color: white;
     }
-
-    .navlinks a.active {
+    .navbar a.active {
         background-color: #F95700;
         color: white;
     }
-    
-    .logo-img{
-        height: 50px;
-        padding: 10px;
-    }
+}
 
-    .container {
-        background-color: black;
+@media (max-width: 1200px) {
+    .collapsible {
+        display: none;
     }
 }

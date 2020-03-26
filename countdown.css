@@ -1,0 +1,29 @@
+
+#clockdiv {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    /*font-family: 'Montserrat', sans-serif;*/
+}
+
+#clockdiv div {
+    display: inline-block;
+    font-size: 1em;
+    text-align: center;
+}
+
+#clockdiv div * {
+    display: inline-block;
+}
+
+#clockdiv div span {
+    border-radius: 5px;
+    font-size: 2em;
+    text-align: right;
+    width: 3ch;
+}
+
+#clockdiv div .smalltext {
+    padding: 1ch;
+    text-align: left;
+}
