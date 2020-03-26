@@ -1,0 +1,55 @@
+@media (min-width: 1200px) {
+    .navbar {
+        position: sticky;
+        top: 0;
+        font-size: 1.3em;
+        height: 70px;
+        background-color: white;
+        z-index: 5;
+    }
+
+    .navlinks {
+        float: right;
+        padding-right: 40px;
+    }
+
+    .navlinks a {
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: #F95700;
+        padding: 0 20px;
+        margin: 0;
+        height: 70px;
+        line-height: 70px;
+        
+        transition: all .25s ease-in-out;
+    }
+
+    .navlinks a i {
+        padding-right: 5px;
+    }
+
+    .navlinks a:hover {
+        background-color: #ECECEC;
+    }
+
+    .navlinks a:active {
+        background-color: #F95700;
+        color: white;
+    }
+
+    .navlinks a.active {
+        background-color: #F95700;
+        color: white;
+    }
+    
+    .logo-img{
+        height: 50px;
+        padding: 10px;
+    }
+
+    .container {
+        background-color: black;
+    }
+}

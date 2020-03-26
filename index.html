@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+    <header>
+        <title>The HERO Club</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="home.js"></script>
+        <script src="https://kit.fontawesome.com/af6dcadebe.js" crossorigin="anonymous"></script>
+    </header>
+    <body onload="onload();">
+        <nav class="navbar">
+            <img class="logo-img" src="assets/logo.png" alt="The HERO Club"/>
+            <div class="navlinks">
+                <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
+                <a href="index.html"><i class="fas fa-brain"></i>PPPD</a>
+                <a href="index.html"><i class="fas fa-running"></i>5k Race/Walk</a>
+                <a href="index.html"><i class="fas fa-photo-video"></i>Gallery</a>
+                <a href="index.html"><i class="fas fa-address-card"></i>About Us</a>
+                <a href="index.html"><i class="fas fa-bullhorn"></i>Contact Us</a>
+                <a href="index.html"><i class="fas fa-donate"></i>Donate</a>
+            </div>
+        </nav>
+        <div id="slider">
+            <figure>
+                <img src="assets/heroimg1.jpg" alt>
+                <img src="assets/heroimg2.jpg" alt>
+                <img src="assets/heroimg1.jpg" alt>
+                <img src="assets/heroimg2.jpg" alt>
+                <img src="assets/heroimg1.jpg" alt>
+            </figure>
+        </div>
+        <section>
+            <div class="countdown float" id="clockdiv">
+                <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
+                </div>
+                <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hours</div>
+                </div>
+                <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Minutes</div>
+                </div>
+                <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Seconds</div>
+                </div>
+                <h1>to the 5k<i class="fas fa-running"></i></h1>
+            </div>
+        </section>
+        <section>
+            <h1 class="pb-3">The HERO Club has raised and donated over $ <span id="count3" class="display-4"></span> to date and donated it to the Mayo Clinic.</h1>
+        </section>
+   </body>
+</html>

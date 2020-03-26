@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url(mobile.css);
+@import url(desktop.css);
+
+/* Universal CSS */ 
+
+@keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    color: #F95700;
+    font-family: 'Baloo 2', cursive;
+}
+
+div#clockdiv {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+div#clockdiv h1{
+    font-size: 1.5em;
+    margin: .2em 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    display: inline-block;
+}
+
+div#clockdiv h1 i{
+    padding: 0 1ch;
+}
+
+div#clockdiv > div{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #F95700;
+    display: inline-block;
+}
+
+div#clockdiv > div * {
+    display: inline-block;
+}
+
+div#clockdiv div > span{
+    padding: .5em;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Inconsolata', monospace;
+}
+
+div#clockdiv.smalltext{
+    padding-top: 5px;
+    font-size: .2em;
+    font-family: 'Baloo 2', cursive;
+}
+
+div#slider {
+     overflow: hidden; 
+}
+
+div#slider figure img {
+     width: 20%; 
+     float: left; 
+}
+
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+#count3 {
+    font-family: 'Inconsolata', monospace;
+}
+
+section {
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 2rem auto;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+@media (max-width: 920px) {
+    section {
+        margin: 2rem .5rem;
+    }
+}
