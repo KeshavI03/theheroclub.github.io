@@ -38,7 +38,7 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     min-height: 25vh;
     margin: 10vh 0;
 }
