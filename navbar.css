@@ -24,7 +24,7 @@
         position: relative;
         display: inline-block;
         text-decoration: none;
-        color: #F95700;
+        color: black;
         padding: 0 20px;
         margin: 0;
         height: 70px;
@@ -32,19 +32,23 @@
         transition: all .25s ease-in-out;
     }
     .navbar a i {
-        padding-right: 5px;
+        padding-right: 1ch;
+        color: #F95700;
     }
     .navbar a:hover {
         background-color: #ECECEC;
-        color: #0c86c7;
+        text-decoration: underline;
+
     }
     .navbar a:active {
-        background-color: #F95700;
-        color: white;
+        background-color: #ECECEC;
+        text-decoration: underline;
+        text-decoration-color: #F95700;
     }
     .navbar a.active {
-        background-color: #F95700;
-        color: white;
+        background-color: #ECECEC;
+        text-decoration: underline;
+        text-decoration-color: #F95700;
     }
 }
 

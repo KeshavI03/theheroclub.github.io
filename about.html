@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
-<header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The HERO Club</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="home.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
 
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/af6dcadebe.js" crossorigin="anonymous"></script>
+<body>
+    <header class="navbar">
+        <nav>
+            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
+            <div class="collapsible">
+                <a href="index.html"><i class="fas fa-home"></i>Home</a>
+                <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
+                <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
+                <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
+                <a href="about.html" class="active"><i class="fas fa-address-card"></i>About Us</a>
+                <a href="contact.html"><i class="fas fa-bullhorn"></i>Contact Us</a>
+                <a href="donate.html"><i class="fas fa-donate"></i>Donate</a>
+            </div>
+        </nav>
+    </header>
 
-
-</header>
-
-<body onload="onload();">
-    <nav class="navbar">
-        <img class="logo-img" src="assets/logo.png" alt="The HERO Club" />
-        <div class="collapsible">
-            <a href="index.html"><i class="fas fa-home"></i>Home</a>
-            <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
-            <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
-            <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
-            <a href="about.html" class="active"><i class="fas fa-address-card"></i>About Us</a>
-            <a href="contact.html"><i class="fas fa-bullhorn"></i>Contact Us</a>
-            <a href="donate.html"><i class="fas fa-donate"></i>Donate</a>
-        </div>
-    </nav>
-    
-    <footer data-aos="fade-up">
+    <footer>
         <div class="information">
             <div class="links">
                 <h2>Links</h2>
@@ -45,20 +41,18 @@
             <div class="social-media">
                 <h2>Social Media</h2>
                 <ul>
-                    <li><a href="https://www.facebook.com/TheHeroClub.org/" class="active"><i style="color: #3b5998;" class="fab fa-facebook"></i>Facebook</a></li>
-                    <li><a href="https://twitter.com/theherocluborg" class="active"><i style="color: #00acee;" class="fab fa-twitter"></i>Twitter</a></li>
-                    <li><a href="https://www.instagram.com/theherocluborg/?hl=en" class="active"><i class="fab fa-instagram instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.facebook.com/TheHeroClub.org/" class="active"><i style="color: #3b5998;"
+                                class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/theherocluborg" class="active"><i style="color: #00acee;"
+                                class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/theherocluborg/?hl=en" class="active"><i
+                                class="fab fa-instagram instagram"></i>Instagram</a></li>
                 </ul>
             </div>
         </div>
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

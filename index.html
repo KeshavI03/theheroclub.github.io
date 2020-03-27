@@ -1,88 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
-<header>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>The HERO Club</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="home.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="slideshow.css" />
+    <link rel="stylesheet" href="countdown.css" />
+    <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+</head>
 
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/af6dcadebe.js" crossorigin="anonymous"></script>
-</header>
-
-<body onload="onload();">
-    <nav class="navbar">
-        <img class="logo-img" src="assets/logo.png" alt="The HERO Club" />
-        <div class="collapsible">
-            <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
-            <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
-            <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
-            <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
-            <a href="about.html"><i class="fas fa-address-card"></i>About Us</a>
-            <a href="contact.html"><i class="fas fa-bullhorn"></i>Contact Us</a>
-            <a href="donate.html"><i class="fas fa-donate"></i>Donate</a>
-        </div>
-    </nav>
-    <section class="slideshow-container" data-aos="fade-up">
+<body>
+    <header class="navbar">
+        <nav>
+            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
+            <div class="collapsible">
+                <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
+                <a href="PPPD.html"><i class="fa fa-brain"></i>PPPD</a>
+                <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
+                <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
+                <a href="about.html"><i class="fas fa-address-card"></i>About Us</a>
+                <a href="contact.html"><i class="fas fa-bullhorn"></i>Contact Us</a>
+                <a href="donate.html"><i class="fas fa-donate"></i>Donate</a>
+            </div>
+        </nav>
+    </header>
+    <section class="slideshow-container">
         <!-- Full-width images with number and caption text -->
-        <img class="mySlides fade" src="assets/heroimg1.jpg">
-        <img class="mySlides fade" src="assets/heroimg2.jpg">
+        <img class="mySlides fade" src="assets/heroimg1.jpg" alt="Running Image 1">
+        <img class="mySlides fade" src="assets/heroimg2.jpg" alt="Running Image 2">
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-        <section class="overlay">
-            <div id="clockdiv">
-                <div>
-                    <span class="days"></span>
-                    <div class="smalltext">Days</div>
-                </div>
-                <div>
-                    <span class="hours"></span>
-                    <div class="smalltext">Hr</div>
-                </div>
-                <div>
-                    <span class="minutes"></span>
-                    <div class="smalltext">Min</div>
-                </div>
-                <div>
-                    <span class="seconds"></span>
-                    <div class="smalltext">Sec</div>
-                </div>
+        <section id="clockdiv">
+            <div>
+                <span class="days"></span>
+                <div class="smalltext">Days</div>
             </div>
-            <!--<h1>to the 5k<i class="fas fa-running"></i></h1>-->
-            <div id="highlight-text">
-                <h1>Coming July 11th, 2020 — Our 4th annual 5k.</h1>
+            <div>
+                <span class="hours"></span>
+                <div class="smalltext">Hr</div>
             </div>
+            <div>
+                <span class="minutes"></span>
+                <div class="smalltext">Min</div>
+            </div>
+            <div>
+                <span class="seconds"></span>
+                <div class="smalltext">Sec</div>
+            </div>
+        </section>
+        <section id="highlight-text">
+            <h1>Coming July 11th, 2020 — Our 4th annual 5k.</h1>
         </section>
     </section>
 
     <section class="card">
-        <div data-aos="fade" class="sidetext">
+        <div class="sidetext">
             <h1>Welcome to the HERO Club! </h1>
             <p> Helping Everyone Reach Out. Our goal is to raise awareness and funds for a chronic condition that
                 afflicts one of our member's mother and also affects many more people, called Persistent
                 Postural-Perceptual Dizziness (PPPD). </p>
             <button class="button" onclick="window.location.href = 'PPPD.html'"><span>Learn More</span></button>
         </div>
-        <img class="image" data-aos="fade-left" src="assets/welcomeheroimg.jpg">
+        <img class="image" src="assets/welcomeheroimg.jpg" alt="Welcome Image">
     </section>
 
     <section class="card">
-        <img class="image" data-aos="fade-right" src="assets/5krace.jpg">
-        <div data-aos="fade" class="sidetext">
+        <img class="image" src="assets/5krace.jpg" alt="Race Day Image">
+        <div class="sidetext">
             <h1>Our 4th Annual 5k.</h1>
             <h3>Date: July 11th, 2020</h3>
             <h3>Location: Pinehill Park, Mason, OH</h3>
-            <p> We are excited to announce that we are preparing for our fourth annual The HERO Club 5k. Let’s do this!</p>
+            <p> We are excited to announce that we are preparing for our fourth annual The HERO Club 5k. Let’s do this!
+            </p>
             <button class="button" onclick="window.location.href = '5k.html'"><span>Learn More</span></button>
         </div>
     </section>
 
-    <footer data-aos="fade-up">
+    <footer>
         <div class="information">
             <div class="links">
                 <h2>Links</h2>
@@ -99,19 +97,21 @@
             <div class="social-media">
                 <h2>Social Media</h2>
                 <ul>
-                    <li><a href="https://www.facebook.com/TheHeroClub.org/" class="active"><i style="color: #3b5998;" class="fab fa-facebook"></i>Facebook</a></li>
-                    <li><a href="https://twitter.com/theherocluborg" class="active"><i style="color: #00acee;" class="fab fa-twitter"></i>Twitter</a></li>
-                    <li><a href="https://www.instagram.com/theherocluborg/?hl=en" class="active"><i class="fab fa-instagram instagram"></i>Instagram</a></li>
+                    <li><a href="https://www.facebook.com/TheHeroClub.org/" class="active"><i style="color: #3b5998;"
+                                class="fab fa-facebook"></i>Facebook</a></li>
+                    <li><a href="https://twitter.com/theherocluborg" class="active"><i style="color: #00acee;"
+                                class="fab fa-twitter"></i>Twitter</a></li>
+                    <li><a href="https://www.instagram.com/theherocluborg/?hl=en" class="active"><i
+                                class="fab fa-instagram instagram"></i>Instagram</a></li>
                 </ul>
             </div>
         </div>
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="home.js"></script>
     <script>
-        AOS.init();
+        onload();
     </script>
 </body>
 
