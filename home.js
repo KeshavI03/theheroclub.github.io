@@ -55,10 +55,8 @@ function showDivs(n) {
   }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
-    x[i].style.opacity = 0;
   }
-  x[slideIndex - 1].style.display = "inline-block";
-  x[slideIndex - 1].style.opacity = 1;
+  x[slideIndex - 1].style.display = "block";
 }
 
 function onload() {

@@ -6,6 +6,7 @@
     background-color: white;
     color: #F95700;
     z-index: 50;
+    border-bottom: 1px solid #e2e2e2;
 }
 
 .logo-img {
