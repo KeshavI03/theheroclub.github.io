@@ -1,0 +1,22 @@
+.content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    margin-top: 3vh;
+}
+
+.content>section {
+    margin: 0;
+    margin-bottom: 10vh;
+}
+
+.content>section:last-of-type {
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.content img {
+    width: 100%;
+    box-shadow: 0px 0px 35px 0px rgba(0,0,0,0.5);
+    border-radius: 1px;
+}

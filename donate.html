@@ -2,19 +2,27 @@
 <html lang="en-US">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The HERO Club</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <script src="js/nav.js"></script>
 </head>
 
-<body>
-    <header class="navbar">
+<body onresize="handleResize()">
+    <header id="navbar">
         <nav>
             <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
-            <div class="collapsible">
+            <div class="mnu-toggle" onclick="toggle()">
+                <img src="assets/mnu_icon.svg" id="open" class="fade" />
+                <img src="assets/close_icon.svg" id="close" class="fade" />
+            </div>
+            <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
-                <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
+                <a href="PPPD.html"><i class="fa fa-brain"></i>PPPD</a>
                 <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
                 <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
                 <a href="about.html"><i class="fas fa-address-card"></i>About Us</a>
@@ -23,6 +31,23 @@
             </div>
         </nav>
     </header>
+    
+    <section class="card">
+        <div class="sidetext">
+            <h1>THANK YOU!</h1>
+            <h2>WE GREATLY APPRECIATE YOUR CONTRIBUTION</h2>
+        </div>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+            <input type="hidden" name="cmd" value="_donations" />
+            <input type="hidden" name="business" value="FV6NEW4E8GEDS" />
+            <input type="hidden" name="item_name" value="The Hero Club Payment Testing" />
+            <input type="hidden" name="currency_code" value="USD" />
+            <input type="image" src="assets/paypal-donate-button.svg" border="0" name="submit"
+                title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+            <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif"/>
+        </form>
+    </section>
+
 
     <footer>
         <div class="information">
@@ -53,6 +78,10 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
+    <script src="js/home.js"></script>
+    <script>
+        onload();
+    </script>
 </body>
 
 </html>

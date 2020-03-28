@@ -4,17 +4,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The HERO Club</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="js/nav.js"></script>
 </head>
 
-<body>
-    <header class="navbar">
+<body onresize="handleResize()">
+    <header id="navbar">
         <nav>
             <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
-            <div class="collapsible">
+            <div class="mnu-toggle" onclick="toggle()">
+                <img src="assets/mnu_icon.svg" id="open" class="fade" />
+                <img src="assets/close_icon.svg" id="close" class="fade" />
+            </div>
+            <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
-                <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
+                <a href="PPPD.html"><i class="fa fa-brain"></i>PPPD</a>
                 <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
                 <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
                 <a href="about.html" class="active"><i class="fas fa-address-card"></i>About Us</a>
@@ -23,7 +28,163 @@
             </div>
         </nav>
     </header>
+    <article>
+        <section class="card">
+            <div class="sidetext left">
+                <h1>Who We Are</h1>
+                <p>
+                    The "Hero Club” is a 501(c)(3) registered non-profit that raises awareness
+                    and funds for research on rare neurological and vestibular conditions.
+                    We host a variety of fun events for the whole family. Profits from all
+                    of these events are given to industry leading hospitals so they can continue
+                    their research and hopefully develop cures for the conditions many people face.
+                </p>
+            </div>
+            <img class="image" src="assets/aboutpic1.jpg" alt="Race Day Image">
+        </section>
 
+        <section class="card">
+            <div class="sidetext">
+                <h1>Our Goals</h1>
+                <ol>
+                    <li>To help the people who have reached out to us</li>
+                    <li>To continue funding research and discover a cures for rare neurological conditions</li>
+                    <li>To provide assistance to those who are struggling with rare neurological conditions</li>
+                    <li>To <em>Help Everyone Reach Out!</em> (HERO)</li>
+                </ol>
+            </div>
+            <img class="image left" src="assets/aboutpic2.png" alt="Welcome Image">
+        </section>
+
+        <section class="card">
+            <div class="sidetext left">
+                <h1>How It All Began</h1>
+                <p>
+                    “The Hero Club” is the brainchild of Pranav Yenugu and Amogh Iyanna.
+                    It started out from the passion of two students from Mason Middle
+                    School who loved (and still do!) to help others. Each was inspired by
+                    their own interest and experience to give back to the community. They
+                    started off by organizing some volunteer events for “Hands against Hunger.”
+                    After participating and working with Mason Middle School on several successful
+                    events, Pranav wanted to take the idea above and beyond school boundaries. He
+                    decided to extend his help to everyone in the community by “Helping Everyone Reach Out”.
+                </p>
+            </div>
+            <img class="image" src="assets/aboutpic3.jpg" alt="Race Day Image">
+        </section>
+
+        <section class="content">
+            <div class="sidetext">
+                <h1>The Story of Our Founder,</h1>
+                <h2>Pranav Yenugu</h2>
+                <p>
+                    From a very young age, my parents taught me and my sister the value of giving, be it family,
+                    community
+                    or neighborhood.
+                    We learned to always give without expecting anything in return. While others might have spent their
+                    time
+                    playing games,
+                    we worked hard at volunteering. And we loved it.
+                </p>
+                <p>
+                    Being honest, I never truly understood what all the
+                    fuss was about. I
+                    was just like any other kid. Carefree, fun-loving, always playing games, and not worried about
+                    anything,
+                    especially the
+                    future. But one year, when I was 10 years old, an unexpected thing happened in my family. My mom was
+                    suddenly hospitalized.
+                </p>
+                <p>
+                    It all started when we went on a trip to the Smoky Mountains. A few days after our trip, she was hit
+                    with a massive vertigo
+                    attack while she was at work. She also started experiencing flu-like symptoms. After 15-20 days of
+                    antibiotic treatment,
+                    several tests were done by ENT specialists and neurologists to find the root cause of her condition.
+                    My
+                    mom slowly became
+                    less and less mobile, and on top of this, began to lose sensation in her hands and legs. Within a
+                    day or
+                    two, she was hospitalized
+                    and was diagnosed with viral encephalitis, a condition that affects your central nervous system. She
+                    became totally paralyzed for almost a year.
+                </p>
+                <p>
+                    This hit me very hard. My mother is a very influential person in my life, and I felt almost lost
+                    without
+                    her guidance.
+                    I remember when she finally came back from rehab, in a wheelchair. My mom had to relearn how to walk
+                    again along with several other things.
+                    The entire process was very tough for me and my family, but we persevered, completely changing our
+                    lifestyle along the way.
+                </p>
+                <p>
+                    My mom’s determination to be back on her legs is definitely what encouraged me to carry on. She just
+                    never gave up.
+                </p>
+                <p>
+                    As many people know, losing someone important to you, or someone who you love is hard, and sends
+                    many
+                    people into depression.
+                    But losing your own self, that’s the harshest and toughest of them all. The fact that she didn’t
+                    feel
+                    sorry for herself is amazing,
+                    and has taught me a very important lesson: never give up, no matter how bleak the situation seems
+                    because you can always find a way out with enough
+                    patience and diligence.
+                </p>
+                <p>
+                    Months turned into years, and we still didn’t know the reason why her condition
+                    wasn’t stabilizing. My mom continued her rehab
+                    and medication and continued to visit several new doctors and hospitals, but nobody knew what was
+                    happening. We were frightened out of our minds.
+                </p>
+                <p>
+                    Day by day, we waited to see what had happened and what we could do to fix if — it that was even
+                    possible. My father was very determined to find a solution
+                    for her condition. He took her to many hospitals, including the Cleveland Clinic. Finally in 2016 —
+                    after four long years — the Mayo Clinic in Rochester
+                    identified that the viral encephalitis and the initial vestibular and balance disorder that my
+                    mother
+                    suffered from had affected her brain and led to a
+                    condition called PPPD or 3PD (Persistent Postural-Perceptual Dizziness). They had just discovered
+                    and
+                    defined the diagnosis and key symptoms for PPPD
+                    in early 2014. The medication and treatment plan was developed later, around mid-2015. Furthermore,
+                    as
+                    per the information from the Mayo Clinic doctors,
+                    PPPD is yet to be added to the ICD (International Classification of Diseases), and this was why no
+                    doctors in Ohio knew about this condition.
+                    Even within the entire United States, very few doctors knew what this condition was — the number of
+                    them
+                    could be counted on one’s fingers!
+                </p>
+                <p>
+                    Throughout this entire journey, I noticed how much our community has given our family. We never felt
+                    left out of events or celebrations in the slightest.
+                    Our relatives, friends, neighbors, well-wishers, my parents’ colleagues and everyone else we know in
+                    the
+                    community stood by us, and continue to help us in these hard times.
+                    Everyone was morally supportive and continue to motivate us constantly.
+                </p>
+                <p>
+                    My mother’s friends still help out to this day: volunteering to drive my mother to her daily
+                    appointments
+                    and rehabs. All this kindness completely changed my perspective on life. I realized why my
+                    grandparents
+                    and family have always been active participants in the community, hosting
+                    so many charity events and serving so many people in hardship. It sometimes surprised me the way
+                    they
+                    all worked together to help people in destitution and need. But after witnessing
+                    firsthand some of the terrible things people around the world must go through, my belief in giving
+                    has
+                    been cemented, and in turn, has shaped me into a better person. It has bestowed upon me a new goal
+                    that
+                    I will continue to do throughout the rest of my life: Helping Everyone Reach Out.
+                </p>
+            </div>
+        </section>
+    </article>
     <footer>
         <div class="information">
             <div class="links">
@@ -53,6 +214,10 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
+    <script src="js/home.js"></script>
+    <script>
+        onload();
+    </script>
 </body>
 
 </html>

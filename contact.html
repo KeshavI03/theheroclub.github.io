@@ -4,17 +4,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The HERO Club</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="js/nav.js"></script>
 </head>
 
-<body>
-    <header class="navbar">
+<body onresize="handleResize()">
+    <header id="navbar">
         <nav>
             <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
-            <div class="collapsible">
+            <div class="mnu-toggle" onclick="toggle()">
+                <img src="assets/mnu_icon.svg" id="open" class="fade" />
+                <img src="assets/close_icon.svg" id="close" class="fade" />
+            </div>
+            <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
-                <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
+                <a href="PPPD.html"><i class="fa fa-brain"></i>PPPD</a>
                 <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
                 <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
                 <a href="about.html"><i class="fas fa-address-card"></i>About Us</a>
@@ -23,6 +28,24 @@
             </div>
         </nav>
     </header>
+
+    <article>
+        <section class="content">
+            <div class="text">
+                <h1>Contact Us</h1>
+                <form action="contact.php" method="POST">
+                    <h2>Name</h2>
+                    <input type="text" id="name" name="name" placeholder="Name..." class="textinput">
+                    <h2>Email</h2>
+                    <input type="text" id="email" name="email" placeholder="something@gmail.com" class="textinput">
+                    <h2>Message</h2>
+                    <textarea id="subject" name="subject" placeholder="Message..." class="textinput"></textarea>
+                    <br>
+                    <button type="submit" class="button"><span>Submit</span></button>
+                </form>
+            </div>
+        </section>
+    </article>
 
     <footer>
         <div class="information">
@@ -53,6 +76,10 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
+    <script src="js/home.js"></script>
+    <script>
+        onload();
+    </script>
 </body>
 
 </html>

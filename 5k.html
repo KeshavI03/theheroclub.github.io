@@ -4,17 +4,22 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The HERO Club</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <script src="js/nav.js"></script>
 </head>
 
-<body>
-    <header class="navbar">
+<body onresize="handleResize()">
+    <header id="navbar">
         <nav>
             <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
-            <div class="collapsible">
+            <div class="mnu-toggle" onclick="toggle()">
+                <img src="assets/mnu_icon.svg" id="open" class="fade" />
+                <img src="assets/close_icon.svg" id="close" class="fade" />
+            </div>
+            <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
-                <a href="PPPD.html"><i class="fas fa-brain"></i>PPPD</a>
+                <a href="PPPD.html" ><i class="fa fa-brain"></i>PPPD</a>
                 <a href="5k.html" class="active"><i class="fas fa-running"></i>5k Race/Walk</a>
                 <a href="gallery.html"><i class="fas fa-photo-video"></i>Gallery</a>
                 <a href="about.html"><i class="fas fa-address-card"></i>About Us</a>
@@ -23,6 +28,131 @@
             </div>
         </nav>
     </header>
+
+    <article class="content">
+        <section>
+            <h1>4th Annual 5K for PPPD Awareness</h1>
+            <div class="links2">
+                <p><em><a target="_blank" href="https://calendar.google.com/calendar/r/week/2020/7/11">
+                    Date: Saturday, July 11th, 2020
+                </a></em></p>
+                <p><em><a target="_blank" href="https://www.google.com/maps/place/Pine+Hill+Lakes+Park/@39.357446,-84.3042798,17z/data=!3m1!4b1!4m5!3m4!1s0x8840582554870189:0xa8a928354928cdbd!8m2!3d39.357446!4d-84.3020858">
+                    Location: Pinehill Park, Mason, OH
+                </a></em></p>
+            </div>
+            <p> All the proceeds raised from our 5k will go to the Mayo Clinic for further
+                research on this terrible condition. To date, we have raised almost $30,000 for the cause.
+            </p>
+
+            <h2>Divisions</h2>
+            <ul> 
+                <li>9 & under</li>
+                <li>10-14</li>
+                <li>15-19</li>
+                <li>25-29</li>
+                <li>30-34</li>
+                <li>35-39</li>
+                <li>40-44</li>
+                <li>45-49</li>
+                <li>50-54</li>
+                <li>60-64</li>
+                <li>65 & over</li>
+            </ul>
+
+            <h2>Awards</h2>
+            <p> The top overall male and female runners will receive trophies.
+                Medals will be given to the top male and female runners in each age division
+            </p>
+
+            <h2>After the Race</h2>
+            <p> A variety of food and drink will be provided (Chipotle, Nothing Bundt Cakes, etc)
+            </p>
+
+            <h2>Registration Fee</h2>
+            <p> Registration before the Race online is $25 and Registration on Race Day is $30. </p>
+
+            <button class="button"
+                onclick="window.location.href = 'https://runsignup.com/Race/OH/Mason/TheHEROClub5K'"><span>Register/Donate</span></button>
+        </section>
+        
+        <section>
+            <h1>3rd Annual 5K for PPPD Awareness</h1>
+            <p><em>Date: Saturday, July 13th, 2019</em></p>
+            
+            <p> The HERO Club hosted its 3rd annual
+                5k this year on July 13th. We raised
+                over $11,000 and had over 150 people in attendance.
+            </p>
+
+            <p> Congrats to our winners Anthony Goodrich and Isabella Rojo,
+                who ran a 19:16 and 25:51 respectively.
+            </p>
+            <p>
+                We are very thankful for all our volunteers and sponsors:
+            </p>
+            <ul>
+                <li>Diamond Sponsors – UST Global</li> 
+                <li>Platinum Sponsors – McDonald & McDonald Attornies</li>
+                <li>Food Sponsors – Fresh Market, Chipotle</li>
+                <li>Water Sponsors – Drug Mart</li>
+            </ul>
+            <p>Once again, thanks to everyone who came. We wouldn’t have 
+                been able to do this without everyone’s support.
+            </p>
+            
+        </section>
+
+        <section>
+            <h1>2nd Annual 5K for PPPD Awareness</h1>
+            <p><em>Date: Saturday, July 24th, 2018</em></p>
+            <p> We are very thankful to everyone that came to the run. The event 
+                was a huge success. We had about 150 runners and walkers who participated 
+                in the race. Looking back, it’s very surreal that it’s already been almost
+                a year since the first annual The HERO Club 5k and that we’ve already completed 
+                the second one. We are very grateful to all the support and contributions we got 
+                from the volunteers, sponsors, donors, and runners. So once again, thanks to each 
+                and everyone of you.
+            </p>
+
+            <p> We also had dazzling singers Danielle Ullman, Mckenzie Stewart, Gabe De Guia, 
+                Priyanka Yenugu and Shelby Sansom from the MELODY WALLACE VOICE STUDIO, who 
+                entertained the crowd with their mesmerizing voice and songs.
+            </p>
+            
+            <p>
+                Here are Some of Our Biggest Sponsors --
+                We are very thankful for their help!
+            </p>
+
+            <ul>
+                <li>Diamond Sponsors- Deloitte and UST Global Inc ($2500+)</li> 
+                <li>Platinum Sponsors- Fidelity Charitable and Cognizant ($1500+)</li>
+                <li>Gold Sponsors- McDonald & McDonald Law Firm ($1000)</li>
+                <li>Silver Sponsors- CoreDataLabs ($500)</li>
+                <li>Food Sponsors- Brixx Wood Fired Pizza (Mason, OH), Nothing Bundt Cakes (Mason, OH), Bheemas Dublin</li>
+                <li>Water Sponsors- Drug Mart</li>
+            </ul>
+
+            
+        </section>
+        <section>
+            <h1>1st Annual 5K for PPPD Awareness</h1>
+            <p><em>Date: Saturday, July SOMETHING, 2017</em></p>
+            <p>
+                We raised $11,500 & had over 200 registrants. We want to deeply thank all of our sponsors and volunteers for 
+                their support and contribution from the bottom of my heart. We are unable to express my gratitude in words.
+                We can’t believe we were able to accomplish something this big in our first endeavor. Let’s hope we can keep
+                it up and continue the success next year.
+            </p>
+
+            <p>
+                Please Check Out Some of Our Generous Sponsors from 2017:
+            </p>
+
+            <img src="assets/sponsors-logo.jpg" alt="The HERO Club" />
+            
+        </section>
+    </article>
 
     <footer>
         <div class="information">
@@ -53,6 +183,10 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
+    <script src="js/home.js"></script>
+    <script>
+        onload();
+    </script>
 </body>
 
 </html>

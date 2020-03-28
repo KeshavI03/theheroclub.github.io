@@ -1,0 +1,95 @@
+#navbar {
+    position: sticky;
+    top: 0;
+    font-size: 1.3em;
+    height: 70px;
+    background-color: white;
+    color: #F95700;
+    z-index: 50;
+    border-bottom: 1px solid #e2e2e2;
+    transition: height .25s ease-in-out;
+}
+
+.logo-img {
+    height: 50px;
+    padding: 10px;
+    display: block;
+    float: left;
+}
+
+#collapsible {
+    float: right;
+    padding-right: 40px;
+    height: 70px;
+}
+
+#collapsible a {
+    display: inline-block;
+}
+
+#collapsible a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 0 14px;
+    margin: 0;
+    height: 70px;
+    line-height: 70px;
+    transition: all .25s ease-in-out;
+}
+
+#collapsible a i {
+    padding-right: 1ch;
+    color: #F95700;
+}
+
+#collapsible a:active {
+    background-color: #F3F3F3;
+    text-decoration: underline;
+    text-decoration-color: #F95700;
+}
+
+#collapsible a.active {
+    background-color: #F3F3F3;
+    text-decoration: underline;
+    text-decoration-color: #F95700 !important;
+}
+
+#collapsible a:hover {
+    background-color: #ECECEC;
+    text-decoration: underline;
+}
+
+@media (min-width: 1350px) {
+    .mnu-toggle {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1351px) {
+    #collapsible {
+        display: none;
+        width: 100%;
+        padding: 0 !important;
+        margin-top: 1vh;
+    }
+
+    #collapsible a {
+        width: 100%;
+        padding: 0 5vw;
+        box-sizing: border-box;
+    }
+
+    .mnu-toggle img {
+        float: right;
+        height: 50px;
+        padding: 10px;
+    }
+    #close {
+        display: none;
+    }
+    #navbar a {
+        display: block;
+    }
+}

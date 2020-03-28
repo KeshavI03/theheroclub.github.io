@@ -1,0 +1,94 @@
+.slideshow-container * {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 70px);
+    color: white;
+    background: #070707;
+}
+
+.slideshow-container h1 {
+    text-decoration: none;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+    display: none;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    transition: opacity .25s ease-in-out;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    z-index: 10;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#highlight-text {
+    position: absolute;
+    transform: translateY(-50%);
+    max-width: 500px;
+    transition: all .125s ease-in-out;
+}
+
+@media (min-width: 1200px) {
+    #highlight-text {
+        width: 25vw;
+        left: 15%;
+    }
+}
+
+@media (max-width: 1201px) {
+    #highlight-text {
+        left: 10%;
+        width: 80%;
+    }
+}
+
+@media  (min-width: 600px) {
+    #highlight-text {
+        top: 50%;
+    }
+}
+
+@media  (max-width: 601px) {
+    #highlight-text {
+        top: 30%;
+        font-size: 0.8em;
+    }
+}

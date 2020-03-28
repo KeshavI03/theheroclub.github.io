@@ -2,19 +2,25 @@
 <html lang="en-US">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The HERO Club</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="slideshow.css" />
-    <link rel="stylesheet" href="countdown.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slideshow.css" />
+    <link rel="stylesheet" href="css/countdown.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+
+    <script src="js/nav.js"></script>
 </head>
 
-<body>
-    <header class="navbar">
+<body onresize="handleResize()">
+    <header id="navbar">
         <nav>
             <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
-            <div class="collapsible">
+            <div class="mnu-toggle" onclick="toggle()">
+                <img src="assets/mnu_icon.svg" id="open" class="fade" />
+                <img src="assets/close_icon.svg" id="close" class="fade" />
+            </div>
+            <div id="collapsible" class="fade">
                 <a href="index.html" class="active"><i class="fas fa-home"></i>Home</a>
                 <a href="PPPD.html"><i class="fa fa-brain"></i>PPPD</a>
                 <a href="5k.html"><i class="fas fa-running"></i>5k Race/Walk</a>
@@ -58,26 +64,29 @@
     </section>
 
     <section class="card">
-        <div class="sidetext">
+        <div class="sidetext left">
             <h1>Welcome to the HERO Club! </h1>
-            <p> Helping Everyone Reach Out. Our goal is to raise awareness and funds for a chronic condition that
-                afflicts one of our member's mother and also affects many more people, called Persistent
-                Postural-Perceptual Dizziness (PPPD). </p>
+            <p>
+                Helping Everyone Reach Out. Our goal is to raise awareness and funds for a chronic condition that
+                afflicts one of our member's mother and many other people, called Persistent
+                Postural-Perceptual Dizziness (PPPD).
+            </p>
             <button class="button" onclick="window.location.href = 'PPPD.html'"><span>Learn More</span></button>
         </div>
         <img class="image" src="assets/welcomeheroimg.jpg" alt="Welcome Image">
     </section>
 
     <section class="card">
-        <img class="image" src="assets/5krace.jpg" alt="Race Day Image">
         <div class="sidetext">
             <h1>Our 4th Annual 5k.</h1>
-            <h3>Date: July 11th, 2020</h3>
-            <h3>Location: Pinehill Park, Mason, OH</h3>
-            <p> We are excited to announce that we are preparing for our fourth annual The HERO Club 5k. Let’s do this!
+            <p><em>Date: July 11th, 2020</h3></em></p>
+            <p><em>Location: Pinehill Park, Mason, OH</em></p>
+            <p>
+                We are excited to announce that we are preparing for our fourth annual The HERO Club 5k. Let’s do this!
             </p>
             <button class="button" onclick="window.location.href = '5k.html'"><span>Learn More</span></button>
         </div>
+        <img class="image left" src="assets/5krace.jpg" alt="Race Day Image">
     </section>
 
     <footer>
@@ -109,7 +118,7 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
-    <script src="home.js"></script>
+    <script src="js/home.js"></script>
     <script>
         onload();
     </script>
