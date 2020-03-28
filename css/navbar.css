@@ -4,7 +4,7 @@
     font-size: 1.3em;
     height: 70px;
     background-color: white;
-    color: #F95700;
+    color: #F28500;
     z-index: 50;
     border-bottom: 1px solid #e2e2e2;
     transition: height .25s ease-in-out;
@@ -40,19 +40,19 @@
 
 #collapsible a i {
     padding-right: 1ch;
-    color: #F95700;
+    color: #F28500;
 }
 
 #collapsible a:active {
     background-color: #F3F3F3;
     text-decoration: underline;
-    text-decoration-color: #F95700;
+    text-decoration-color: #F28500;
 }
 
 #collapsible a.active {
     background-color: #F3F3F3;
     text-decoration: underline;
-    text-decoration-color: #F95700 !important;
+    text-decoration-color: #F28500 !important;
 }
 
 #collapsible a:hover {

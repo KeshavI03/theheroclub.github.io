@@ -19,19 +19,19 @@ h1 {
     margin: 30px 0 20px 0;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #F95700;
+    text-decoration-color: #F28500;
 }
 
 h2 {
     margin: 20px 0 15px 0;
     text-decoration: underline;
-    text-decoration-color: #F95700;
+    text-decoration-color: #F28500;
     font-size: 2em;
 }
 
 h3 {
     text-decoration: underline;
-    text-decoration-color: #F95700;
+    text-decoration-color: #F28500;
 }
 
 p {
@@ -42,14 +42,14 @@ em {
     font-style: normal;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: #F95700;
+    text-decoration-color: #F28500;
 }
 
 .button {
     cursor: pointer;
     background-color: white;
     color: black;
-    border: 2px solid #F95700;
+    border: 2px solid #F28500;
     height: 54px;
     font-size: 1.2em;
     padding: 0 2ch;
@@ -65,7 +65,7 @@ em {
 }
 
 .button:hover {
-    background-color: #F95700;
+    background-color: #F28500;
 }
 
 .button:hover i {
@@ -124,7 +124,7 @@ em {
 }
 
 .links2 a:hover {
-    text-decoration-color:  #F95700;
+    text-decoration-color:  #F28500;
 }
 
 .links a:hover {
@@ -137,7 +137,7 @@ em {
     padding: 12px;
     border: none;
     background: #F5F5F5;
-    border-bottom: 3px solid #F95700;
+    border-bottom: 3px solid #F28500;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
