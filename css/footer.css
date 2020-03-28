@@ -59,3 +59,12 @@ li a:active {
     text-decoration: underline;
     text-decoration-color: #F95700;
 }
+
+@media (max-width: 1351px) {
+    li a {
+        height: 50px;
+        width: 150px;
+        line-height: 50px;
+        vertical-align: middle;
+    }
+}

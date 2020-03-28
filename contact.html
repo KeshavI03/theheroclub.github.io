@@ -3,7 +3,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="
+        Contact us to sponor or ask about our mission!"
+    />
+    <meta charset="utf-8"/>
     <title>The HERO Club</title>
+    <link rel="icon" href="assets/logo.svg" sizes="any" type="image/svg+xml"/>
     <link rel="stylesheet" href="css/style.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <script src="js/nav.js"></script>
@@ -12,10 +17,10 @@
 <body onresize="handleResize()">
     <header id="navbar">
         <nav>
-            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
+            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" onclick="window.location.href = 'index.html'"/>
             <div class="mnu-toggle" onclick="toggle()">
-                <img src="assets/mnu_icon.svg" id="open" class="fade" />
-                <img src="assets/close_icon.svg" id="close" class="fade" />
+                <img src="assets/mnu_icon.svg" id="open" alt="open menu" class="fade" />
+                <img src="assets/close_icon.svg" id="close" alt="close menu" class="fade" />
             </div>
             <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
@@ -34,12 +39,12 @@
             <div class="text">
                 <h1>Contact Us</h1>
                 <form action="contact.php" method="POST">
-                    <h2>Name</h2>
-                    <input type="text" id="name" name="name" placeholder="Name..." class="textinput">
-                    <h2>Email</h2>
-                    <input type="text" id="email" name="email" placeholder="something@gmail.com" class="textinput">
-                    <h2>Message</h2>
-                    <textarea id="subject" name="subject" placeholder="Message..." class="textinput"></textarea>
+                    <label for="name" class="large">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Steve Smith" class="textinput">
+                    <label for="email" class="large">Email</label>
+                    <input type="text" id="email" name="email" placeholder="steve.smith@example.com" class="textinput">
+                    <label for="subject" class="large">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Message" class="textinput"></textarea>
                     <br>
                     <button type="submit" class="button"><span>Submit</span></button>
                 </form>
@@ -76,10 +81,6 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
-    <script src="js/home.js"></script>
-    <script>
-        onload();
-    </script>
 </body>
 
 </html>

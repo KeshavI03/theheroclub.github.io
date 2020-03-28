@@ -3,7 +3,12 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="
+        Our 4th annual 5K to raise awareness for PPPD is coming up! Come run with us!"
+    />
+    <meta charset="utf-8"/>
     <title>The HERO Club</title>
+    <link rel="icon" href="assets/logo.svg" sizes="any" type="image/svg+xml"/>
     <link rel="stylesheet" href="css/style.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <script src="js/nav.js"></script>
@@ -12,10 +17,10 @@
 <body onresize="handleResize()">
     <header id="navbar">
         <nav>
-            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
+            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" onclick="window.location.href = 'index.html'"/>
             <div class="mnu-toggle" onclick="toggle()">
-                <img src="assets/mnu_icon.svg" id="open" class="fade" />
-                <img src="assets/close_icon.svg" id="close" class="fade" />
+                <img src="assets/mnu_icon.svg" id="open" alt="open menu" class="fade" />
+                <img src="assets/close_icon.svg" id="close" alt="close menu" class="fade" />
             </div>
             <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
@@ -33,10 +38,10 @@
         <section>
             <h1>4th Annual 5K for PPPD Awareness</h1>
             <div class="links2">
-                <p><em><a target="_blank" href="https://calendar.google.com/calendar/r/week/2020/7/11">
+                <p><em><a target="_blank" rel="noreferrer" href="https://calendar.google.com/calendar/r/week/2020/7/11">
                     Date: Saturday, July 11th, 2020
                 </a></em></p>
-                <p><em><a target="_blank" href="https://www.google.com/maps/place/Pine+Hill+Lakes+Park/@39.357446,-84.3042798,17z/data=!3m1!4b1!4m5!3m4!1s0x8840582554870189:0xa8a928354928cdbd!8m2!3d39.357446!4d-84.3020858">
+                <p><em><a target="_blank" rel="noreferrer" href="https://www.google.com/maps/place/Pine+Hill+Lakes+Park/@39.357446,-84.3042798,17z/data=!3m1!4b1!4m5!3m4!1s0x8840582554870189:0xa8a928354928cdbd!8m2!3d39.357446!4d-84.3020858">
                     Location: Pinehill Park, Mason, OH
                 </a></em></p>
             </div>
@@ -183,10 +188,6 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
-    <script src="js/home.js"></script>
-    <script>
-        onload();
-    </script>
 </body>
 
 </html>

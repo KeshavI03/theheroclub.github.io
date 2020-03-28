@@ -3,7 +3,11 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="
+        What is PPPD?" />
+    <meta charset="utf-8" />
     <title>The HERO Club</title>
+    <link rel="icon" href="assets/logo.svg" sizes="any" type="image/svg+xml"/>
     <link rel="stylesheet" href="css/style.css" />
     <linK rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <script src="js/nav.js"></script>
@@ -12,10 +16,10 @@
 <body onresize="handleResize()">
     <header id="navbar">
         <nav>
-            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" />
+            <img class="logo-img" src="assets/logo.svg" alt="The HERO Club" onclick="window.location.href = 'index.html'"/>
             <div class="mnu-toggle" onclick="toggle()">
-                <img src="assets/mnu_icon.svg" id="open" class="fade" />
-                <img src="assets/close_icon.svg" id="close" class="fade" />
+                <img src="assets/mnu_icon.svg" id="open" alt="open menu" class="fade" />
+                <img src="assets/close_icon.svg" id="close" alt="close menu" class="fade" />
             </div>
             <div id="collapsible" class="fade">
                 <a href="index.html"><i class="fas fa-home"></i>Home</a>
@@ -190,11 +194,12 @@
                 material and have had a complete evaluation, it is not likely that other diagnoses have been missed.
             </p>
             <h2>More Information & Sources</h2>
-            <ul class="links2">
-                <li><a
-                        href="http://www.mayoclinic.org/diseases-conditions/balance-problems/symptoms-causes/dxc-20166190" target ="_blank">The
+            <ul class="links2" style="list-style: none; padding: 0;">
+                <li><a href="http://www.mayoclinic.org/diseases-conditions/balance-problems/symptoms-causes/dxc-20166190"
+                        target="_blank" rel="noreferrer">The
                         Mayo Clinic</a></li>
-                <li><a href="https://vestibular.org/pppd" target ="_blank">Vestibular Disorders Association</a></li>
+                <li><a href="https://vestibular.org/pppd" target="_blank" rel="noreferrer">Vestibular Disorders
+                        Association</a></li>
             </ul>
 
         </div>
@@ -228,10 +233,6 @@
         <p> Copyright © 2020 The HERO Club</p>
         <small>Site made by Aarya Patel, Keshav Iyengar, Shriram Ravishankar, & Sankaran Iyer</small>
     </footer>
-    <script src="js/home.js"></script>
-    <script>
-        onload();
-    </script>
 </body>
 
 </html>

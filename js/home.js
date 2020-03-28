@@ -59,7 +59,7 @@ function showDivs(n) {
 }
 
 function onload() {
-  initializeClock('clockdiv', 'Jul 11, 2020 09:00:00');
+  initializeClock('clockdiv', 'Jul 11, 2020 08:00:00');
   showDivs(slideIndex);
   var timer1 = setInterval(() => plusSlides(1), 15000);
 }

@@ -50,41 +50,57 @@ em {
     background-color: white;
     color: black;
     border: 2px solid #F95700;
-    height: 50px;
+    height: 54px;
     font-size: 1.2em;
-    padding: 0 1ch;
+    padding: 0 2ch;
     border-radius: 1px;
     transition: .125s background-color ease-in-out;
+}
+
+.button i {
+    font-size: 1.5em;
+    padding-right: .66ch;
+    vertical-align: middle;
+    transition: all .25s ease-in-out;
 }
 
 .button:hover {
     background-color: #F95700;
 }
-.button span {
 
+.button:hover i {
+    color: white !important;
+}
+
+.button span {
     display: inline-block;
     position: relative;
     transition: padding-right 0.25s ease-in-out, color 0.125s ease-in-out;
+    height: 50px;
+    line-height: 50px;
 }
 
 .button span:after {
     content: '\00bb';
+    /*content: '🡢';*/
     position: absolute;
     opacity: 0;
     top: 0;
+    right: 0;
+    height: 50px;
+    font-size: 1.5em;
+    line-height: 50px;
     transition: all 0.25s ease-in-out;
     color: white;
 }
 
 .button:hover span {
     color: white;
-    padding-right: 3ch;
+    padding-right: 2.6ch;
 }
 
 .button:hover span:after {
-    padding: 0 1ch;
     opacity: 1;
-    right: 0;
 }
 
 .links {
@@ -102,11 +118,14 @@ em {
 .links2 a {
     color: black;
     text-decoration: underline;
-    text-decoration-color:  #F95700;
     padding: 5px 0;
     display: block;
+    transition: .125s all ease-in-out;
 }
 
+.links2 a:hover {
+    text-decoration-color:  #F95700;
+}
 
 .links a:hover {
     text-decoration: underline;
@@ -134,6 +153,11 @@ em {
 .textinput:focus {
     outline: none;
     background: #E5E5E5;
+}
+
+.large {
+    font-size: 2em;
+    margin: 0.5em 0;
 }
 
 /* Fading animation */
